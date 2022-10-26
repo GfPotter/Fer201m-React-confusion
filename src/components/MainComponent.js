@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
 import Menu from './MenuComponent';
-import { DISHES } from '../shared/dishes';
+
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import About from './AboutComponent';
 import Home from './HomeComponent';
 import DishDetail from './DishdetailComponent';
 import Contact from './ContactComponent';
-import { COMMENTS } from '../shared/comments';
-import { PROMOTIONS } from '../shared/promotions';
-import { LEADERS } from '../shared/leaders';
+
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 
