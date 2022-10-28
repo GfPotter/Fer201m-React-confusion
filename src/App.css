@@ -31,6 +31,6 @@ address{
 .navbar-dark {
     background-color: #512DA8;
 }
-.modal_content{
+.modal.fade {
     opacity: 1 !important;
 }
