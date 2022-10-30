@@ -14,7 +14,8 @@ class Contact extends Component {
             email: '',
             agree: false,
             contactType: 'Tel.',
-            message: '', touched: {
+            message: '',
+            touched: {
                 firstname: false,
                 lastname: false,
                 telnum: false,
@@ -132,7 +133,7 @@ class Contact extends Component {
                                             invalid={errors.firstname !== ''}
                                             onBlur={this.handleBlur('firstname')}
                                             onChange={this.handleInputChange} />
-                                        <FormFeedback>{errors.firstname}</FormFeedback>
+                                        <FormFeedback >{errors.firstname}</FormFeedback>
                                     </Col>
                                 </FormGroup>
                                 <FormGroup row>
@@ -214,7 +215,7 @@ class Contact extends Component {
                             </Form>
                         </div>
                     </div>
-                </div>
+                </div >
             );
         }
     }
