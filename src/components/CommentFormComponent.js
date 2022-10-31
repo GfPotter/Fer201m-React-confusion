@@ -36,7 +36,7 @@ class CommentForm extends Component {
                                 <Label htmlFor="rating" md={2}>Rating</Label>
                                 <Col >
                                     <Control.select model=".rating" id="rating" name="rating"
-                                        placeholder="Rating"
+
                                         className="form-control"
                                     >   <option>1</option>
                                         <option>2</option>
