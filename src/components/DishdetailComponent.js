@@ -5,7 +5,7 @@ import {
 } from 'reactstrap';
 import CommentForm from "./CommentFormComponent";
 import { Link } from 'react-router-dom';
-
+import { Loading } from './LoadingComponent';
 function RenderDish({ dish }) {
   if (dish != null) {
     return (
@@ -55,8 +55,25 @@ function RenderComments({ comments, addComment, dishId }) {
 
 const DishDetail = (props) => {
 
-  const selectDish = props.dish;
-  if (selectDish != null) {
+  if (props.isLoading) {
+    return (
+      <div className="container">
+        <div className="row">
+          <Loading />
+        </div>
+      </div>
+    );
+  }
+  else if (props.errMess) {
+    return (
+      <div className="container">
+        <div className="row">
+          <h4>{props.errMess}</h4>
+        </div>
+      </div>
+    );
+  }
+  else if (props.dish != null) {
     return (
       <div className="container">
         <div className="row">
